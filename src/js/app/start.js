@@ -3,6 +3,6 @@ goog.provide("tt.app.start");
 goog.require('tt.tpl.base');
 
 tt.app.start = function(parent) {
-	var h1 = tt.tpl.base.headline({title:'TEST'});
-	document.write(h1);
+	var container = tt.tpl.base.page({title:'TEST'});
+	document.write(container);
 }

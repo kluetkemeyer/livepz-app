@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<title>LivePZ-Rechner</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
 		
 		<script src="bin/closure-library/closure/goog/base.js"></script>
 		<script src="js/deps.js"></script>
@@ -11,13 +12,11 @@
 			goog.require('tt.app');
 		</script>
 	</head>
-	<body>
-		<div id="view"></div>
+	<body class="ui-mobile ui-mobile-viewport ui-overlay-a">
 		
 		<script>
 			(function() {
-					var view = document.getElementById("view");
-					tt.app.start(view);
+					tt.app.start();
 			})();
 		</script>
 	</body>
